@@ -1,0 +1,213 @@
+/* This Cascading Style Sheet Wrote by Gal Regev.  
+-------- Email: Galregev55@gmail.com --------////
+==> Please do not copy any part of the code //*/
+/* Import Fonts from GoogleFonts */
+@import url("https://fonts.googleapis.com/css?family=Assistant:400,700,800|M+PLUS+Rounded+1c");
+* {
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  margin: 7% auto;
+  width: 1000px;
+  height: 100vh;
+}
+
+body {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  background: url("img/bg.jpg");
+  overflow: hidden;
+}
+
+h1#logo {
+  font-size: 80px;
+  font-weight: 800;
+  display: block;
+  margin: 0 auto;
+  font-family: "Assistant", sans-serif;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, right top, from(#30CFD0), to(#330867));
+  background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 45px;
+  padding: 0;
+}
+
+h1#logo:hover {
+  transform: scale(1.05);
+}
+
+p#subtitle {
+  text-align: center;
+  font-family: 'Assistant', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: rgb(99, 99, 99);
+  letter-spacing: 3px;
+  position: relative;
+  top: -2px;
+}
+
+/******************* 
+**    The Form    **
+*******************/
+
+form#getRadius {
+  width: 60%;
+  height: auto;
+  margin: 20px auto;
+  padding: 30px;
+  padding-bottom: 10px;
+  background: #e9e9e9;
+  box-shadow: 1px 5px 10px #c5c5c5;
+  text-align: center;
+}
+
+label#help {
+  font-weight: 700;
+}
+
+form#getRadius input[type="number"] {
+  width: 60%;
+  height: auto;
+  padding: 12px;
+  border-radius: 7px;
+  border: 1px solid rgb(206, 206, 206);
+  transition: transform 0.1s;
+  text-align: center;
+  color: #c4c4c4;
+  background-image: linear-gradient(to top, #fff, #e3e3e3);
+}
+
+form#getRadius input[type="number"]:hover {
+  transform: scale(1.02);
+}
+
+button.submit {
+  width: 30%;
+  height: 50px;
+  border-radius: 5px 20px 5px;
+  border: 2px solid #649ae6;
+  background-image: linear-gradient(to top, #518ee4 0%, #00d2ff 100%);
+  margin: 20px auto;
+  font-size: 25px;
+  font-family: $titleFont;
+  color: #fff;
+  transition: transform 0.1s;
+  cursor: pointer;
+}
+
+button.clear {
+  width: 30%;
+  height: 50px;
+  border-radius: 5px 20px 5px;
+  border: 2px solid #b30808;
+  background-image: linear-gradient(to top, #db1a1a 0%, #ec6767 100%);
+  margin: 20px auto;
+  margin-right: 25px;
+  font-size: 25px;
+  font-family: $titleFont;
+  color: #fff;
+  transition: transform 0.1s;
+  cursor: pointer;
+}
+
+button.clear:hover {
+  transform: scale(1.1);
+  text-decoration: underline;
+  background-position: right;
+}
+
+button.submit:hover {
+  transform: scale(1.1);
+  text-decoration: underline;
+  background-position: right;
+}
+
+
+
+/******************* 
+**   SpanAlert    **
+*******************/
+
+span#info {
+  width: 100%;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  background-image: linear-gradient(to top, rgb(0, 87, 250), #4f81df);
+  color: #e3e3e3;
+}
+
+/******************* 
+**  Modal Window  **
+*******************/
+.modal-window {
+  position: fixed;
+  background-color: rgba(200, 200, 200, 0.75);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.modal-window:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-window > div {
+  width: 400px;
+  position: relative;
+  margin: 10% auto;
+  padding: 2rem;
+  background: #fff;
+  color: #444;
+}
+
+.modal-window header {
+  font-weight: bold;
+}
+
+.modal-close {
+  color: #aaa !important;
+  line-height: 50px;
+  font-size: 80%;
+  position: absolute;
+  left: 10px;
+  text-align: center;
+  top: 0;
+  width: 70px;
+  text-decoration: none;
+}
+
+.modal-close:hover {
+  color: #000 !important;
+}
+
+.modal-window h1 {
+  font-size: 150%;
+  margin: 0 0 15px;
+  background: -webkit-gradient(linear, left top, right top, from(#30CFD0), to(#330867));
+  background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/*# sourceMappingURL=style.css.map */
